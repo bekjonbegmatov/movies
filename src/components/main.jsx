@@ -40,7 +40,7 @@ function Main() {
         loader()
         setFurs(false)
 
-        let url = 'http://www.omdbapi.com/?apikey=30559cb0&t=' + msearch
+        let url = 'https://www.omdbapi.com/?apikey=30559cb0&t=' + msearch
         fetch(url)
             .then(response => response.json())
             .then(data => {
