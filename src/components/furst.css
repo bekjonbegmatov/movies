@@ -4,10 +4,12 @@ body{
     /* color: white;
     background: url('weee.jpg'); */
     text-align: center;
+    width: 100%;
 
 }
 #malumot{
     font-family: 'Secular One', sans-serif;
+    text-align: center;
 }
 #img_fon{
     width: 100%;
@@ -40,9 +42,15 @@ body{
 #get:hover{
     color: red;
 }
-/* #fon{
-    background-color: black;
-    opacity: 0.5;
-    z-index: -1;
-
-} */
+#inp{
+    width: 700px;
+    height: 60px;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 30%;
+}
+#but{
+    height: 80px;
+    width: 200px;
+    font-size: 40px;
+}

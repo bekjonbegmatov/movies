@@ -3,7 +3,7 @@
 body {
     background-color: #4e4e4e;
     color: white;
-
+    width: 100%;
 }
 
 #movi {
@@ -279,4 +279,21 @@ Bottom{
     }
 
 
+}
+#map{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 90px;
+    /* margin-top: 21%; */
+}
+#leable{
+    margin-top: 21%;
+    font-size: 100px;
+    color: blue;
+    text-shadow: 0 0 10px white ;
+    padding-bottom: 200px;
+}
+hr{
+    height: 3px;
+    color: #fff;
 }
