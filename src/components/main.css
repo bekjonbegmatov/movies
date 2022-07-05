@@ -48,6 +48,7 @@ body {
 
 #img {
     text-align: left;
+    width: 100%;
 }
 
 #vbn {
@@ -226,7 +227,9 @@ Bottom{
     box-shadow: 0 0 20px 10px rgb(0, 0, 255);
     color: white;
     text-align: left;
-    display: flex;padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding-top: 20px;
     padding-left: 3%;
     margin-top: 400px;
 
@@ -240,12 +243,19 @@ Bottom{
     margin-left: 3%;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     #lodaer {
         margin-top: 50%;
-        /* margin-left: 40%; */
     }
-
+    #leable{
+        font-size: 20px;
+        color: rgb(255, 0, 0);
+        text-shadow: 0 0 10px white ;
+        padding-bottom: 0px;
+    }
+    span{
+        font-size: 40px;
+    }
     #not_fund {
         margin-top: 50%;
         /* margin-left: 28%; */
@@ -277,14 +287,15 @@ Bottom{
     #bottom {
         margin-top: 0px;
     }
+    
+
 
 
 }
 #map{
     display: grid;
     grid-template-columns: auto auto auto;
-    row-gap: 90px;
-    /* margin-top: 21%; */
+    row-gap: 90px; 
 }
 #leable{
     margin-top: 21%;
@@ -296,4 +307,7 @@ Bottom{
 hr{
     height: 3px;
     color: #fff;
+}
+#bugr{
+    background-color: black;
 }

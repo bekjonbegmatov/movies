@@ -160,10 +160,17 @@ function Main() {
                         <span >Intiresting movies</span>
                         <hr />
                     </div>
-                    <div id='map'>
-                        {list.map((val, i) => {
-                            return <Smile_movie Name={val} index={i} click_on={click} />
-                        })}
+                    {/*id='map' */}
+                    <div className="container" >
+                        <div className="row">
+                            {list.map((val, i) => {
+                                return (
+                                    <div class="col-sm">
+                                        <Smile_movie Name={val} index={i} click_on={click} />
+                                    </div>
+                                )
+                            })}
+                        </div>
                     </div>
 
                     <Bottom />

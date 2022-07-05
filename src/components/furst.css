@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
-body{
+
+body {
     background-color: #4e4e4e;
     /* color: white;
     background: url('weee.jpg'); */
@@ -7,50 +8,86 @@ body{
     width: 100%;
 
 }
-#malumot{
+
+#malumot {
     font-family: 'Secular One', sans-serif;
     text-align: center;
 }
-#img_fon{
+
+#img_fon {
     width: 100%;
     height: 100%;
-    position: absolute; 
+    position: absolute;
     position: fixed;
     opacity: 0.5;
-    z-index: -2;   
+    z-index: -2;
     top: 0px;
     left: 0px;
 }
-#info1{
+
+#info1 {
     position: absolute;
     z-index: 1;
     width: 100%;
     height: 1000px;
 }
-#hh1{
+
+#hh1 {
     font-size: 70px;
     margin-top: 15%;
 
 }
-#get{
+
+#get {
     background-color: blue;
     padding: 20px;
     width: 350px;
     text-align: center;
     margin-left: 40%;
 }
-#get:hover{
+
+#get:hover {
     color: red;
 }
-#inp{
+
+#inp {
     width: 700px;
     height: 60px;
     font-size: 50px;
     text-align: center;
     margin-left: 30%;
 }
-#but{
+
+#but {
     height: 80px;
     width: 200px;
     font-size: 40px;
+}
+
+@media screen and (max-width: 992px) {
+    #get {
+        background-color: blue;
+        padding: 20px;
+        width: 350px;
+        text-align: center;
+        margin-left: 10%;
+    }
+    #hh1 {
+        font-size: 40px;
+        margin-top: 15%;
+    
+    }
+    #inp {
+        width: 400px;
+        height: 60px;
+        font-size: 50px;
+        text-align: center;
+        margin-left: 0%;
+        padding: 1%;
+    }
+    #but {
+        height: 80px;
+        width: 100px;
+        font-size: 20px;
+    }
 }
