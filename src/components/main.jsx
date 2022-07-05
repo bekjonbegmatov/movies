@@ -8,6 +8,7 @@ import './main.css'
 import Smile_movie from './smile_movie';
 import Bottom from './bottom';
 import { Routes } from 'react-router';
+import { Alert } from 'bootstrap/dist/js/bootstrap';
 
 function Main() {
     const [sear, setSear] = useState(false)
@@ -102,9 +103,19 @@ function Main() {
 
         console.log("foo", msearch);
     }
-    function click(bol) {
+    function click(bol , name) {
         setClicked(true)
         setSear(false)
+        // setName(name)
+        // let url = 'https://www.omdbapi.com/?apikey=30559cb0&t=' + name;
+        // search(name , true , url)
+    }
+    function click1(bol , name) {
+        setClicked(true)
+        setSear(false)
+        setName(name)
+        let url = 'https://www.omdbapi.com/?apikey=30559cb0&t=' + name;
+        search(name , true , url)
     }
     function loader() {
         let timer;
@@ -123,13 +134,38 @@ function Main() {
         search()
 
     }
+    function home() {
+        // setSear(false)
+        // setFurs(true)
+        // setClicked(false)
+        // setError(false)
+        // setLoaderBool(false)
+        setSear(false)
+        setFurs(true)
+        setMsearch('')
+        setName('')
+        setPoster('')
+        setCountry('')
+        setLanguage('')
+        setReleased('')
+        setRating('')
+        setGenre('')
+        setActors('')
+        setPlot('')
+        setRuntime('')
+        setClicked(false)
+        setError(false)
+        setError_Text('')
+        setLoaderBool(false)
+
+    }
 
     return (
         <div>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             <nav className="navbar bg-dark">
                 <div className="container-fluid">
-                    <a className="navbar-brand" >Find Movie</a>
+                    <a className="navbar-brand" onClick={home} >Find Movie</a>
                     <div className="d-flex" >
                         <input type="search" className='form-control me-2' placeholder="Search" aria-label="Search" id='inpu-val' onChange={getValue} />
                         <button className="btn btn-outline-success" onClick={() => { search('fv', false, 'rfr') }}>Search</button>
@@ -166,7 +202,7 @@ function Main() {
                             {list.map((val, i) => {
                                 return (
                                     <div class="col-sm">
-                                        <Smile_movie Name={val} index={i} click_on={click} />
+                                        <Smile_movie Name={val} index={i} click_on={click1} />
                                     </div>
                                 )
                             })}

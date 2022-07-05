@@ -24,7 +24,7 @@ function Movie(props) {
 
     }
     return (
-        <div id='movi' onClick={() => props.click_on(true)}>
+        <div id='movi' onClick={() => props.click_on(true , props.Name)}>
             <img src={props.poster} id='photo_pos'/>
             <div id="info">
                 <h1>{props.moviname}</h1>

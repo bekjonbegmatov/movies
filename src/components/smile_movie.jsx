@@ -18,7 +18,7 @@ function Smile_movie(props) {
 
     })
     return ( 
-        <div onClick={() => props.click_on(true)} >
+        <div onClick={() => props.click_on(true , props.Name)} >
             <img src={poster} />
             <br />
             <h1>{props.Name}</h1>
