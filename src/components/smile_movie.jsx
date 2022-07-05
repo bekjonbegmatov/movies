@@ -5,7 +5,7 @@ function Smile_movie(props) {
     const [poster , setPoster] = useState('')
     useEffect (() => {
         let name = props.Name;
-        let url = 'http://www.omdbapi.com/?apikey=30559cb0&t=' + name;
+        let url = 'https://www.omdbapi.com/?apikey=30559cb0&t=' + name;
         fetch(url)
         .then(repons => repons.json())
         .then( data => {
